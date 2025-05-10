@@ -59,7 +59,7 @@ ol {
   grid-column: 1;
   grid-row: 1 / span 2;
   flex-direction: column;
-  gap: 19px;
+  gap: 16px;
 }
 
 /*контент*/
@@ -71,7 +71,6 @@ ol {
   width: 1140px;
   height: auto;
   align-items: flex-end;
-  transform: translateY(-66px);
 }
 
 /*поиск*/
@@ -94,7 +93,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  transform: translateY(-8px);
 }
 
 /*прописываю размеры*/
@@ -180,6 +178,7 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  line-height: 36px;
 }
 
 .content__video-card-description {
@@ -209,6 +208,8 @@ ol {
   row-gap: 5px;
   min-width: 212px;
   border: none;
+  margin-top: auto;
+  line-height: 20px;
 }
 
 .search-form__submit-button {
@@ -238,8 +239,8 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-form__fieldset-title {
@@ -256,8 +257,10 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  margin-block-start: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  flex-direction: row;
+  font-family: "Fira Sana Condensed", sans-serif;
+  font-size: 18px;
 }
 
 /*стилизуем левый input*/
@@ -289,17 +292,11 @@ ol {
 }
 
 /*стилизация чекбокса*/
-.search-form__checkbox-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .search-form__pseudo-checkbox {
   display: inline-block;
   width: 19px;
   height: 19px;
-  outline: 1px solid #ffffff;
+  border: 1px solid #ffffff;
   align-self: center;
   margin-right: 5px;
   position: relative;
@@ -344,7 +341,6 @@ ol {
   height: 34px;
   display: block;
   align-items: center;
-  transform: translateY(-8px);
 }
 
 .more-button {
@@ -353,16 +349,12 @@ ol {
 }
 
 /*стилизация состояния кнопок*/
-
 .button:focus {
   outline: none;
   box-shadow: none;
 }
 
 .search-form__label-text:hover {
-  text-decoration: underline;
-}
-.search-form__label:hover {
   text-decoration: underline;
 }
 
@@ -403,7 +395,6 @@ input:focus {
 }
 
 /*стилизация карточек в скролле*/
-
 .content__list-item {
   display: block;
   gap: 30px;
@@ -414,13 +405,12 @@ input:focus {
 .content__list-item:hover {
   text-decoration: underline;
 }
-/*для состояния в JS*/
 
+/*для состояния в JS*/
 .content__card-link_current {
   background-color: #545050;
 }
 
-/**/
 .content__video-card-description-container:hover {
   text-decoration: underline;
 }
